@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.Master.cs" Inherits="Weka.Page" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="estilos/StyleMaster.css" rel="stylesheet" type="text/css" />
+    <link href="estilos/menu.css" rel="stylesheet" />
+    <link href="estilos/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="estilos/css/styleMp.css" rel="stylesheet" />
+    <script type="text/javascript" src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/js/sweetalert2.all.min.js"></script>
+    <script src="Scripts/js/jquery-ui.min.js"></script>
+    <script src="Scripts/JsValidaciones.js"></script>
+    <script type="text/javascript" src="Scripts/ScriptMaster.js"></script>
+    <script src="Scripts/js/bootstrap.min.js"></script>
+
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper d-flex align-items-stretch">
+            <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" ScriptMode="Release" AsyncPostBackTimeout="3600">
+            </asp:ScriptManager>
+            <nav id="sidebar">
+                <div class="img bg-wrap text-center py-2" style="background-image: url(imagenes/bg_1.jpg);">
+                    <div class="user-logo">
+
+                        <div class="img" style="background-image: url(imagenes/bg_1.jpg);"></div>
+
+                        <a class="img" href="AdministracionPaquetes.aspx">
+                            <div>
+                                <label id="admPaquetes" class="rolUsuario" runat="server">Administración Paquetes</label>
+                            </div>
+                        </a>
+                        <div>
+                            <label id="rolUsuario" class="rolUsuario" runat="server">Rol Usuario</label>
+                        </div>
+
+                    </div>
+                </div>
+                <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                    <ContentTemplate>
+                        <div id="mainMenu5" runat="server"></div>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </nav>
+
+            <div id="content">
+
+                <nav class="navbar navbar-dark bg-dark" style="text-align: center; padding: 0.25rem 1rem;">
+                    <div class="navbar-nav mr-auto">
+                        <button type="button" id="sidebarCollapse" class="btn btn-light"></button>
+                    </div>
+                    <label class="nomSistema">WEKA</label>
+                    <div class="navbar-nav ml-auto">
+                        <asp:Button ID="btnSalir" runat="server" Text="" Style="display: none;"
+                            ClientIDMode="Static" CausesValidation="false" UseSubmitBehavior="false" />
+                        <button class="btn btn-outline-light my-2 my-sm-0" onclick="fnSalir();" type="button">Cerrar Sesión</button>
+                    </div>
+                </nav>
+
+                <!-- Page Content  -->
+                <div id="page">
+                    <div id="contenedorPag">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+
+    <script src="Scripts/js/main.js"></script>
+
+</body>
+</html>
