@@ -93,6 +93,7 @@
     <Content Include="Estilos\jquery-ui.theme.css" />
     <Content Include="Estilos\menu.css" />
     <Content Include="Estilos\StyleMaster.css" />
+    <Content Include="FormularioPaquete.aspx" />
     <Content Include="imagenes\bg_1.jpg" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery.colorbox.js" />
@@ -103,8 +104,10 @@
     <Content Include="Scripts\js\script.js" />
     <Content Include="Scripts\js\sweetalert2.all.min.js" />
     <Content Include="Scripts\ScriptMaster.js" />
+    <Content Include="Scripts\validator2.js" />
     <Content Include="Scripts\validator.js" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdministracionPaquetes.aspx.cs">
@@ -118,6 +121,13 @@
     <Compile Include="Database\FirebaseRequest.cs" />
     <Compile Include="Database\FirebaseResponse.cs" />
     <Compile Include="Database\UtilityHelper.cs" />
+    <Compile Include="FormularioPaquete.aspx.cs">
+      <DependentUpon>FormularioPaquete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormularioPaquete.aspx.designer.cs">
+      <DependentUpon>FormularioPaquete.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Model\PaqueteModel.cs" />
     <Compile Include="Page.Master.cs">
       <DependentUpon>Page.Master</DependentUpon>
@@ -127,6 +137,13 @@
       <DependentUpon>Page.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Estilos\css\bootstrap.min.css.map" />

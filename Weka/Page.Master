@@ -1,6 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.Master.cs" Inherits="Weka.Page" %>
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -9,23 +9,25 @@
     <link href="estilos/css/bootstrap.min.css" rel="stylesheet" />
     <link href="estilos/css/styleMp.css" rel="stylesheet" />
     <script type="text/javascript" src="Scripts/jquery-3.4.1.min.js"></script>
-    <script src="Scripts/js/sweetalert2.all.min.js"></script>
-    <script src="Scripts/js/jquery-ui.min.js"></script>
-    <script src="Scripts/JsValidaciones.js"></script>
+    <script type="text/javascript" src="Scripts/js/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="Scripts/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="Scripts/JsValidaciones.js"></script>
     <script type="text/javascript" src="Scripts/ScriptMaster.js"></script>
-    <script src="Scripts/js/bootstrap.min.js"></script>
+     <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+   
+    <script type="text/javascript" src="Scripts/js/bootstrap.min.js"></script>
 
-
+   
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class="wrapper d-flex align-items-stretch">
-            <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" ScriptMode="Release" AsyncPostBackTimeout="3600">
+    <form id="form1" runat="server" method="post" class="form-horizontal req" >
+        <div class="wrapper align-items-stretch">
+           <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" ScriptMode="Release" AsyncPostBackTimeout="3600"> 
             </asp:ScriptManager>
-            <nav id="sidebar">
+            <!-- <nav id="sidebar">
                 <div class="img bg-wrap text-center py-2" style="background-image: url(imagenes/bg_1.jpg);">
                     <div class="user-logo">
 
@@ -42,19 +44,20 @@
 
                     </div>
                 </div>
+             </nav>-->
                 <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                     <ContentTemplate>
                         <div id="mainMenu5" runat="server"></div>
                     </ContentTemplate>
                 </asp:UpdatePanel>
-            </nav>
+           
 
-            <div id="content">
+            <div id="">
 
                 <nav class="navbar navbar-dark bg-dark" style="text-align: center; padding: 0.25rem 1rem;">
-                    <div class="navbar-nav mr-auto">
+                     <!-- <div class="navbar-nav mr-auto">
                         <button type="button" id="sidebarCollapse" class="btn btn-light"></button>
-                    </div>
+                    </div>-->
                     <label class="nomSistema">WEKA</label>
                     <div class="navbar-nav ml-auto">
                         <asp:Button ID="btnSalir" runat="server" Text="" Style="display: none;"

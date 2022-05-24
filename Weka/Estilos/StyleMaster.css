@@ -251,3 +251,11 @@ body {
         padding: 0;
         border-spacing: 0;
     }
+
+.has-error .form-control-feedback {
+    color: #E74C3C;
+}
+
+.has-success .form-control-feedback {
+    color: #18BCA0;
+}

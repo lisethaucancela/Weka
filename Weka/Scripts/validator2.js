@@ -9,7 +9,8 @@
         },
 
         fields: {
-            ctl00$ContentPlaceHolder1$txtNombre: {
+            
+           txtNombre: {
                 validators: {
                     notEmpty: {
                         message: 'El campo Nombre es requerido'
@@ -22,7 +23,8 @@
                 }
             },
 
-            ctl00$ContentPlaceHolder1$txtDescripcion: {
+            
+             txtDescripcion: {
                 feedbackIcons: true,
                 validators: {
                     notEmpty: {
@@ -34,38 +36,40 @@
                     },
                 }
             },
-
-            ctl00$ContentPlaceHolder1$txtitinerario: {
+            
+            txtitinerario: {
                 validators: {
                     notEmpty: {
                         message: 'El campo itinerario es requerido'
                     },
                 }
             },
-            ctl00$ContentPlaceHolder1$txtincluye: {
+             
+            txtincluye: {
                 validators: {
                     notEmpty: {
                         message: 'El campo incluye es requerido'
                     },
                 }
             },
-
-            ctl00$ContentPlaceHolder1$txtnoincluye: {
+            
+            txtnoincluye: {
                 validators: {
                     notEmpty: {
                         message: 'El campo no incluye es requerido'
                     },
                 }
             },
-
-            ctl00$ContentPlaceHolder1$txtllevar: {
+             
+            txtllevar: {
                 validators: {
                     notEmpty: {
                         message: 'El campo llevar es requerido'
                     },
                 }
             },
-            ctl00$ContentPlaceHolder1$txtPrecio: {
+             
+            txtPrecio: {
                 validators: {
                     notEmpty: {
                         message: 'El campo Precio es requerido'
@@ -75,24 +79,24 @@
                     },
                 }
             },
-
-            ctl00$ContentPlaceHolder1$txtminimo: {
+            
+            txtminimo: {
                 validators: {
                     notEmpty: {
                         message: 'El campo mínimo es requerido'
                     },
                 }
             },
-
-            ctl00$ContentPlaceHolder1$txtdistancia: {
+            
+            txtdistancia: {
                 validators: {
                     notEmpty: {
                         message: 'El campo distancia es requerido'
                     },
                 }
             },
-
-            ctl00$ContentPlaceHolder1$txtcolor: {
+             
+            txtcolor: {
                 validators: {
                     notEmpty: {
                         message: 'El campo color es requerido'
@@ -102,10 +106,10 @@
                         regexp: /^[a-zA-Z\s]+$/,
                         message: 'El campo color debe consistir de caracteres alfanumericos'
                     },
-                    
+                   
                 }
             },
-            ctl00$ContentPlaceHolder1$txtmts: {
+            txtmts: {
                 validators: {
                     notEmpty: {
                         message: 'El campo mts es requerido'
@@ -115,8 +119,8 @@
                     },
                 }
             },
-
-            ctl00$ContentPlaceHolder1$txttemperatura: {
+             
+            txttemperatura: {
                 validators: {
                     notEmpty: {
                         message: 'El campo temperatura es requerido'
@@ -124,7 +128,8 @@
                 }
             },
 
-            ctl00$ContentPlaceHolder1$txtLatitud: {
+           
+             txtLatitud: {
                 validators: {
                     notEmpty: {
                         message: 'El campo Latitud es requerido'
@@ -132,8 +137,8 @@
 
                 }
             },
-
-            ctl00$ContentPlaceHolder1$txtLongitud: {
+             
+             txtLongitud: {
                 validators: {
                     notEmpty: {
                         message: 'El campo Longitud es requerido'
@@ -144,19 +149,19 @@
                     },
                 }
             },
-
-            ctl00$ContentPlaceHolder1$txtfoto1: {
+           
+             txtfoto1: {
                 validators: {
                     notEmpty: {
                         message: 'El campo foto1 es requerido'
-                    },
-                    uri: {
-                        message: 'La dirección web no es válida'
-                    }
+                     },
+                     uri: {
+                         message: 'La dirección web no es válida'
+                     }
                 }
             },
-
-            ctl00$ContentPlaceHolder1$txtfoto2: {
+            
+            txtfoto2: {
                 validators: {
                     notEmpty: {
                         message: 'El campo foto2 es requerido'
@@ -167,8 +172,8 @@
                 }
             },
 
-
-            ctl00$ContentPlaceHolder1$txtUrl: {
+             
+            txtUrl: {
                 validators: {
                     notEmpty: {
                         message: 'El campo Url es requerido'
@@ -178,7 +183,6 @@
                     }
                 }
             },
-
         }
 
     });
