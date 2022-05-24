@@ -95,6 +95,7 @@
     <Content Include="Estilos\StyleMaster.css" />
     <Content Include="FormularioPaquete.aspx" />
     <Content Include="imagenes\bg_1.jpg" />
+    <Content Include="imagenes\regresar.png" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery.colorbox.js" />
     <Content Include="Scripts\JsValidaciones.js" />
